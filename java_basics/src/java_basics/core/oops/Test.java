@@ -1,17 +1,14 @@
 package java_basics.core.oops;
 
-
-interface IExample{
-	int x =10;
-	abstract void add();
-}
-public class Test implements IExample{
+public class Test {
 	public static void main(String[] args) {
+		System.out.println("Command-Line arguments are");
+
+		for (String str : args) {
+			// convert into integer type
+			int argument = Integer.parseInt(str);
+			System.out.println("Argument in integer form: " + argument);
+		}
 	}
 
-	@Override
-	public void add() {
-		// TODO Auto-generated method stub
-		
-	}
 }
